@@ -28,6 +28,7 @@ export const PopUpHincha = ({setTeamSelected}) => {
                 <Select options={options} 
                         onChange={setTeamSelected}
                         closeMenuOnSelect={true}
+                        isSearchable={false}
                 />
                 <TiTickOutline size={"2rem"} style={{"width":"100%", "border": "1px solid"}}
                                 onClick={close}
