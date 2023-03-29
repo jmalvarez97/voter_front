@@ -1,4 +1,4 @@
-import "./Seccion.css";
+import "../styles/Seccion.css";
 
 
 export function Seccion({color,nombre, img, float, isBlack}) {

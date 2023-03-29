@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { getRates } from "./utils/querys";
-import { sorted } from "./utils/utils";
+import { getRates } from "../utils/querys";
+import { sorted } from "../utils/utils";
 import Table from 'react-bootstrap/Table';
 
 

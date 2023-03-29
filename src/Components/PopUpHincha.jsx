@@ -1,9 +1,7 @@
 import Popup from "reactjs-popup";
-import {AiFillCloseCircle} from "react-icons/ai"
 import {TiTickOutline} from "react-icons/ti"
 import "reactjs-popup/dist/index.css";
-import { useEffect, useState } from "react";
-import clubes from "./clubes/data.json"
+import clubes from "../clubes/data.json"
 import Select from 'react-select'
 
 
@@ -13,18 +11,15 @@ export const PopUpHincha = ({setTeamSelected}) => {
     let options = []
     const getOptions = (clubes) => clubes.forEach((c) => options.push({value:c.nombre , label:c.nombre}))
      
-    useEffect(() => {
-        getOptions(clubes)
-    }, [])
-
+    getOptions(clubes)
     return (
         <Popup modal nested open={true}>
         {(close) => (
             <div>
                 <div className="banner" style={{"display":"flex"}}>
-                    <h3>Hola! Contanos de que club sos y podes votar que club te cae mejor</h3>
+                    <h3>Hola! contanos de que club sos y podes votar que club te cae mejor</h3>
                 </div>
-                <p>El objetivo de esta pagina es solamente para recolectar datos </p>
+                <p>El objetivo de esta página es únicamente recolectar datos </p>
                 <Select options={options} 
                         onChange={setTeamSelected}
                         closeMenuOnSelect={true}

@@ -1,12 +1,13 @@
-import "./App.css";
+import "./styles/App.css";
 import clubes from "./clubes/data.json";
-import { Seccion } from "./Seccion";
-import { Banner } from "./Banner";
-import { PopUpHincha } from "./PopUpHincha";
+import { Seccion } from "./Components/Seccion";
+import { Banner } from "./Components/Banner";
+import { PopUpHincha } from "./Components/PopUpHincha";
 import { addVote } from "./utils/querys";
-import {randomClubsSelected, isDarkColor} from "./utils/utils";
+import { randomClubsSelected, isDarkColor } from "./utils/utils";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
+
 // Conjunto de colores oscuros, hardcodeados
 const DARK_COLORS = [
   [4, 4, 4],
@@ -20,16 +21,15 @@ const DARK_COLORS = [
   [6, 36, 21],
 ];
 
-
-let randomClubs, img1, img2
+let randomClubs, img1, img2;
 function App() {
-  const [rcs,setRcs ] = useState(false);
+  const [rcs, setRcs] = useState(false);
   const [teamSelected, setTeamSelected] = useState("");
-  if(!rcs){
-    randomClubs = randomClubsSelected(clubes)
+  if (!rcs) {
+    randomClubs = randomClubsSelected(clubes);
     img1 = require(`./clubes/${randomClubs[0].club}`);
     img2 = require(`./clubes/${randomClubs[1].club}`);
-    setRcs(true)
+    setRcs(true);
   }
   return (
     <div className="App">
@@ -39,13 +39,14 @@ function App() {
         className="firstTeam"
         onClick={() => {
           if (teamSelected) {
-            addVote({
-              firstTeam: randomClubs[0].nombre,
-              lastTeam: randomClubs[1].nombre,
-              winner: randomClubs[0].nombre,
-              fanOf: teamSelected.value,
-            },
-            setRcs
+            addVote(
+              {
+                firstTeam: randomClubs[0].nombre,
+                lastTeam: randomClubs[1].nombre,
+                winner: randomClubs[0].nombre,
+                fanOf: teamSelected.value,
+              },
+              setRcs
             );
           } else {
             alert("Selecciona de que club sos :C");
@@ -66,12 +67,15 @@ function App() {
         className="secondTeam"
         onClick={() => {
           if (teamSelected) {
-            addVote({
-              firstTeam: randomClubs[0].nombre,
-              lastTeam: randomClubs[1].nombre,
-              winner: randomClubs[1].nombre,
-              fanOf: teamSelected.value,
-            }, setRcs);
+            addVote(
+              {
+                firstTeam: randomClubs[0].nombre,
+                lastTeam: randomClubs[1].nombre,
+                winner: randomClubs[1].nombre,
+                fanOf: teamSelected.value,
+              },
+              setRcs
+            );
           } else {
             alert("Selecciona de que club sos :C");
             window.location.reload();
