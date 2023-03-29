@@ -16,3 +16,8 @@ export async function addVote(data){
         window.location.reload()
     })
 };
+
+export async function getVotes(state) {
+    axios.get("https://voterback.onrender.com/api/count")
+         .then((res) => state(res.data))
+}

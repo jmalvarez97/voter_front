@@ -2,10 +2,10 @@ import "./App.css";
 import clubes from "./clubes/data.json";
 import { Seccion } from "./Seccion";
 import { Banner } from "./Banner";
-import {PopUpHincha} from "./PopUpHincha"
+import { PopUpHincha } from "./PopUpHincha";
 import { addVote } from "./utils/querys";
-import {randomNumberInRange, isDarkColor} from "./utils/utils"
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { randomNumberInRange, isDarkColor } from "./utils/utils";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
 // Conjunto de colores oscuros, hardcodeados
 const DARK_COLORS = [
@@ -20,45 +20,42 @@ const DARK_COLORS = [
   [6, 36, 21],
 ];
 
-const randomClubs = clubes.reduce(() => {
-  let rand1 = randomNumberInRange(1, clubes.length),
-    rand2;
-  do {
-    rand2 = randomNumberInRange(1, clubes.length);
-  } while (rand1 === rand2);
+const randomClubsSelected = (clubes) =>
+  clubes.reduce(() => {
+    let rand1 = randomNumberInRange(1, clubes.length),
+      rand2;
+    do {
+      rand2 = randomNumberInRange(1, clubes.length);
+    } while (rand1 === rand2);
 
-  return [clubes[rand1], clubes[rand2]];
-});
+    return [clubes[rand1], clubes[rand2]];
+  });
 
+let randomClubs = randomClubsSelected(clubes)
 const img1 = require(`./clubes/${randomClubs[0].club}`);
 const img2 = require(`./clubes/${randomClubs[1].club}`);
 
-
 function App() {
-
   const [teamSelected, setTeamSelected] = useState("");
   return (
     <div className="App">
-      <PopUpHincha
-        setTeamSelected={setTeamSelected}
-      />
-      <Banner/>
+      <PopUpHincha setTeamSelected={setTeamSelected} />
+      <Banner />
       <div
         className="firstTeam"
         onClick={() => {
-          if(teamSelected){
+          if (teamSelected) {
             addVote({
               firstTeam: randomClubs[0].nombre,
               lastTeam: randomClubs[1].nombre,
               winner: randomClubs[0].nombre,
-              fanOf: teamSelected.value
-            });
+              fanOf: teamSelected.value,
+            }
+            );
+          } else {
+            alert("Selecciona de que club sos :C");
+            window.location.reload();
           }
-          else{
-            alert("Selecciona de que club sos :C")
-            window.location.reload()
-          }
-          
         }}
       >
         <Seccion
@@ -73,19 +70,17 @@ function App() {
       <div
         className="secondTeam"
         onClick={() => {
-          if(teamSelected){
+          if (teamSelected) {
             addVote({
               firstTeam: randomClubs[0].nombre,
               lastTeam: randomClubs[1].nombre,
               winner: randomClubs[1].nombre,
-              fanOf: teamSelected.value
+              fanOf: teamSelected.value,
             });
+          } else {
+            alert("Selecciona de que club sos :C");
+            window.location.reload();
           }
-          else{
-            alert("Selecciona de que club sos :C")
-            window.location.reload()
-          }
-          
         }}
       >
         <Seccion
