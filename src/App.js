@@ -20,12 +20,17 @@ const DARK_COLORS = [
   [6, 36, 21],
 ];
 
-let randomClubs = randomClubsSelected(clubes)
-const img1 = require(`./clubes/${randomClubs[0].club}`);
-const img2 = require(`./clubes/${randomClubs[1].club}`);
 
+let randomClubs, img1, img2
 function App() {
+  const [rcs,setRcs ] = useState(false);
   const [teamSelected, setTeamSelected] = useState("");
+  if(!rcs){
+    randomClubs = randomClubsSelected(clubes)
+    img1 = require(`./clubes/${randomClubs[0].club}`);
+    img2 = require(`./clubes/${randomClubs[1].club}`);
+    setRcs(true)
+  }
   return (
     <div className="App">
       <PopUpHincha setTeamSelected={setTeamSelected} />
@@ -39,7 +44,8 @@ function App() {
               lastTeam: randomClubs[1].nombre,
               winner: randomClubs[0].nombre,
               fanOf: teamSelected.value,
-            }
+            },
+            setRcs
             );
           } else {
             alert("Selecciona de que club sos :C");
@@ -65,7 +71,7 @@ function App() {
               lastTeam: randomClubs[1].nombre,
               winner: randomClubs[1].nombre,
               fanOf: teamSelected.value,
-            });
+            }, setRcs);
           } else {
             alert("Selecciona de que club sos :C");
             window.location.reload();

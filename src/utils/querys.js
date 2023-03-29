@@ -5,7 +5,7 @@ export async function getRates(state) {
          .then((res) => state(res.data))
 }
 
-export async function addVote(data){
+export async function addVote(data, setRcs){
     console.log(data)
     await axios({
         method: "post",
@@ -13,7 +13,7 @@ export async function addVote(data){
         data : data
     })
     .then(() => {
-        window.location.reload()
+        setRcs(false)
     })
 };
 
