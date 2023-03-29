@@ -4,7 +4,7 @@ import { Seccion } from "./Seccion";
 import { Banner } from "./Banner";
 import { PopUpHincha } from "./PopUpHincha";
 import { addVote } from "./utils/querys";
-import { randomNumberInRange, isDarkColor } from "./utils/utils";
+import {randomClubsSelected, isDarkColor} from "./utils/utils";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
 // Conjunto de colores oscuros, hardcodeados
@@ -19,17 +19,6 @@ const DARK_COLORS = [
   [4, 32, 15],
   [6, 36, 21],
 ];
-
-const randomClubsSelected = (clubes) =>
-  clubes.reduce(() => {
-    let rand1 = randomNumberInRange(1, clubes.length),
-      rand2;
-    do {
-      rand2 = randomNumberInRange(1, clubes.length);
-    } while (rand1 === rand2);
-
-    return [clubes[rand1], clubes[rand2]];
-  });
 
 let randomClubs = randomClubsSelected(clubes)
 const img1 = require(`./clubes/${randomClubs[0].club}`);
