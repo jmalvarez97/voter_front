@@ -1,0 +1,24 @@
+#section {
+    width: 50%;
+    height: 100vh;
+    float: left;
+    text-align: center;
+    font-size: 10rem;
+  }
+
+  .escudo {
+    margin-top: calc(50vh - 5rem);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+  }
+  .escudo:hover {
+    transform: scale(1.2);
+  }
+
+  .escudo.clicked {
+    display: block;
+  }
+  
+  .nombre{
+    font-size: 1.2rem;
+  }

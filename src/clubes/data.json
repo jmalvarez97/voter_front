@@ -1,0 +1,151 @@
+[
+  {
+    "club": "agropecuario.png",
+    "nombre": "Agropecuario",
+    "color": [5, 140, 60]
+  },
+  { "club": "aldosivi.png", "nombre": "Aldosivi", "color": [51, 139, 75] },
+  { "club": "allboys.png", "nombre": "All Boys", "color": [4, 4, 4] },
+  { "club": "almagro.png", "nombre": "Almagro", "color": [21, 116, 179] },
+  { "club": "almirante.png", "nombre": "Almirante Brown", "color": [250, 226, 6] },
+  { "club": "alvarado.png", "nombre": "Alvarado", "color": [4, 44, 84] },
+  { "club": "argentinos.png", "nombre": "Argentinos", "color": [45, 92, 148] },
+  { "club": "arsenal.png", "nombre": "Arsenal", "color": [159, 137, 107] },
+  { "club": "atlanta.png", "nombre": "Atlanta", "color": [4, 28, 106] },
+  {
+    "club": "atleticorafaela.png",
+    "nombre": "Atletico Rafaela",
+    "color": [4, 155, 211]
+  },
+  {
+    "club": "atleticotucuman.png",
+    "nombre": "Atletico Tucuman",
+    "color": [108, 171, 211]
+  },
+  { "club": "banfield.png", "nombre": "Banfield", "color": [67, 121, 51] },
+  { "club": "barracas.png", "nombre": "Barracas Central", "color": [212, 20, 12] },
+  { "club": "belgrano.png", "nombre": "Belgrano", "color": [4, 4, 4] },
+  { "club": "boca.png", "nombre": "Boca", "color": [250, 187, 4] },
+  {
+    "club": "brownadrogue.png",
+    "nombre": "Brown Adrogue",
+    "color": [227, 20, 20]
+  },
+  { "club": "cadu.png", "nombre": "Cadu", "color": [11, 147, 219] },
+  {
+    "club": "centralcordoba.png",
+    "nombre": "Central Cordoba",
+    "color": [4, 4, 4]
+  },
+  { "club": "chacarita.png", "nombre": "Chacarita", "color": [180, 20, 36] },
+  {
+    "club": "chaco_for_ever.png",
+    "nombre": "Chaco for ever",
+    "color": [4, 4, 4]
+  },
+  { "club": "colon.png", "nombre": "Colon", "color": [193, 20, 30] },
+  { "club": "defensa.png", "nombre": "Defensa y justicia", "color": [247, 215, 7] },
+  { "club": "defensores.png", "nombre": "Defensores", "color": [227, 11, 19] },
+  { "club": "depmaipu.png", "nombre": "Deportivo Maipu", "color": [227, 4, 19] },
+  {
+    "club": "deportivo_madryn.png",
+    "nombre": "Deportivo Madryn",
+    "color": [250, 202, 4]
+  },
+  {
+    "club": "estudiantesrc.png",
+    "nombre": "Estudiantes Rio Cuarto",
+    "color": [4, 140, 212]
+  },
+  {
+    "club": "estudiantes_ba.png",
+    "nombre": "Estudiantes BA",
+    "color": [4, 4, 4]
+  },
+  {
+    "club": "estudiantes_lp.png",
+    "nombre": "Estudiantes LP",
+    "color": [188, 12, 20]
+  },
+  { "club": "ferro.png", "nombre": "Ferro", "color": [5, 99, 44] },
+  { "club": "flandria.png", "nombre": "Flandria", "color": [250, 220, 13] },
+  { "club": "gimnasia.png", "nombre": "Gimnasia LP", "color": [22, 53, 84] },
+  {
+    "club": "gimnasiajujuy.png",
+    "nombre": "Gimnasia Jujuy",
+    "color": [108, 171, 219]
+  },
+  {
+    "club": "gimnasiamendoza.png",
+    "nombre": "Gimnasia Mendoza",
+    "color": [4, 4, 4]
+  },
+  { "club": "godoycruz.png", "nombre": "Godoy Cruz", "color": [4, 116, 211] },
+  { "club": "guemes.png", "nombre": "Guemes SDE", "color": [250, 5, 5] },
+  {
+    "club": "guillermobrown.png",
+    "nombre": "Guillermo Brown",
+    "color": [44, 52, 84]
+  },
+  { "club": "huracan.png", "nombre": "Huracan", "color": [252, 4, 12] },
+  {
+    "club": "independiente.png",
+    "nombre": "Independiente",
+    "color": [4, 4, 4]
+  },
+  {
+    "club": "Independienteriv.png",
+    "nombre": "Independiente Rivadavia",
+    "color": [4, 36, 117]
+  },
+  { "club": "instituto.png", "nombre": "Instituto", "color": [228, 28, 44] },
+  { "club": "lanus.png", "nombre": "Lanus", "color": [184, 161, 95] },
+  { "club": "mitre.png", "nombre": "Mitre", "color": [5, 5, 5] },
+  { "club": "moron.png", "nombre": "Moron", "color": [252, 4, 4] },
+  { "club": "newells.png", "nombre": "Newells", "color": [187, 12, 20] },
+  {
+    "club": "nueva_chicago.png",
+    "nombre": "Nueva Chicago",
+    "color": [4, 32, 15]
+  },
+  { "club": "patronato.png", "nombre": "Patronato", "color": [203, 20, 20] },
+  { "club": "platense.png", "nombre": "Platense", "color": [75, 43, 12] },
+  { "club": "quilmes.png", "nombre": "Quilmes", "color": [12, 28, 84] },
+  { "club": "racing.png", "nombre": "Racing", "color": [76, 156, 204] },
+  {
+    "club": "racing_cordoba.png",
+    "nombre": "Racing Cordoba",
+    "color": [4, 124, 196]
+  },
+  { "club": "riestra.png", "nombre": "Riestra", "color": [4, 4, 4] },
+  { "club": "river.png", "nombre": "River", "color": [227, 36, 28] },
+  {
+    "club": "rosariocentral.png",
+    "nombre": "Rosario Central",
+    "color": [234, 203, 68]
+  },
+  { "club": "sanlorenzo.png", "nombre": "San Lorenzo", "color": [219, 44, 36] },
+  { "club": "sanmartinsj.png", "nombre": "San Martin SJ", "color": [6, 36, 21] },
+  {
+    "club": "sanmartintuc.png",
+    "nombre": "San Martin Tucuman",
+    "color": [252, 250, 250]
+  },
+  { "club": "santelmo.png", "nombre": "San Telmo", "color": [4, 163, 227] },
+  { "club": "sarmiento.png", "nombre": "Sarmiento", "color": [4, 100, 52] },
+  { "club": "talleres.png", "nombre": "Talleres", "color": [218, 218, 219] },
+  { "club": "temperley.png", "nombre": "Temperley", "color": [100, 172, 220] },
+  { "club": "tigre.png", "nombre": "Tigre", "color": [4, 67, 130] },
+  {
+    "club": "tristansuarez.png",
+    "nombre": "Tristan Suarez",
+    "color": [45, 53, 148]
+  },
+  { "club": "union.png", "nombre": "Union", "color": [220, 4, 12] },
+  { "club": "velez.png", "nombre": "Velez", "color": [52, 92, 156] },
+  {
+    "club": "villadalmine.png",
+    "nombre": "Villa Dalmine",
+    "color": [68, 28, 100]
+  }
+]
